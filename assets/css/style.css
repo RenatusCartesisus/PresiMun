@@ -1,0 +1,161 @@
+/* Diseño para la página de inicio (index.html) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    /* Aqui se pueden alterar los colores que se usan en la pagina */
+    --bg-color: #edf4f4;
+    --second-bg-color: #1fccfa;
+    --text-color: #000;
+    --main-color: #0f4bb5;
+}
+
+/* Barra de navegación */
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding: 0;
+    min-height: 100vh;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.img-section,
+.img-section img,
+.home-content {
+    width: 100vw;
+}
+
+
+.text-content {
+    position: absolute;
+    padding: 5%;
+}
+
+.text-content h1 {
+    color: var(--bg-color);
+    text-shadow: 2px 2px 15px #ccc;
+}
+
+.text-content h3 span {
+    color: var(--second-bg-color);
+    text-shadow: 2px 2px 15px var(--bg-color);
+}
+
+/* .services {
+    position: relative;
+} */
+
+.services .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    border: 2px solid #ccc;
+    padding: 1.1rem;
+    gap: 1.1rem;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 10px #1fccfa;
+    transform: scale(1.01);
+    transition: 0.3s ease;
+}
+
+.card-title {
+    text-align: center;
+    color: #ccc;
+}
+
+.services-title {
+    text-align: center;
+    position: relative;
+    padding: 2%;
+}
+
+.services-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.card-logo {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+}
+
+.card-content a {
+    padding: 10px;
+    border-radius: 10%;
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.card-content a:hover {
+    background-color: var(--bg-color);
+    border: 1px solid var(--main-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+
+
+/* @media only screen and (max-width: 450px) {
+
+    .home {
+        max-height: 300px;
+    }
+
+    .img-section,
+    .home-content .img-section img {
+        position: relative;
+        top: 0;
+        min-height: 800px;
+    }
+
+    .home .text-content {
+        top: 2rem;
+        z-index: 10;
+    }
+
+
+
+} */

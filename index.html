@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Diseño del carrusel de imágenes -->
+    <link rel="stylesheet" href="/assets/css/imageSlider.css">
+    <!-- Diseño general de la página -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Para la barra de navegación responsiva -->
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <!-- Para traer las fuentes de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Para traer los íconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Pie de página -->
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <!-- Ícono de la administración  -->
+    <link rel="icon" href="/images/Escudo_de_San_Felipe_(Guanajuato).ico">
+    <title>Administración 2024 - 2027</title>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <input type="checkbox" name="" id="check">
+        <a href="#home" class="logo">Ayuntamiento <span>San Felipe</span></a>
+        <label for="check" class="icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            <i id="cancel-icon" class="fa-solid fa-xmark"></i>
+        </label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="active">INICIO</a></li>
+                <li><a class="class">GOBIERNO &#x25BE</a>
+                    <ul class="dropdown">
+                        <li><a href="">AYUNTAMIENTO</a></li>
+                        <li><a href="direcciones.html">DIRECCIONES</a></li>
+                        <li><a href="">GACETA MUNICIPAL</a></li>
+                        <li><a href="">CONTACTO</a></li>
+                    </ul>
+                </li>
+                <li><a href="#services" class="class">TRANSPARENCIA &#x25BE</a>
+                    <ul class="dropdown">
+                        <li><a href="">TRANSPARENCIA</a></li>
+                        <li><a href="">TRANSPARENCIA PRESUPUESTARIA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#testimonials">MEJORA REGULATORIA &#x25BE</a>
+                    <ul class="dropdown">
+                        <li><a href="">TRAMITES</a></li>
+                        <li><a href="">NORMATIVA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">ENTÉRATE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Imágenes -->
+    <section class="home">
+        <div class="home-content">
+            <div class="img-section fade">
+                <div class="text-content">
+                    <h1>HONORABLE AYUNTAMIENTO MUNICIPAL</h1>
+                    <h3>Bienvenido a <span>San Felipe, Guanajuato</span></h3>
+                    <h3> 1 / 3</h3>
+                </div>
+                <img src="/images/sanfe.jpg" alt="">
+            </div>
+            <div class="img-section fade">
+                <div class="text-content">
+                    <h1>SAN FELIPE</h1>
+                    <h3>TORRES MOCHAS</h3>
+                    <h3> 2 / 3</h3>
+                </div>
+                <img src="/images/Casa_Juárez_-_San_Felipe,_Guanajuato.jpg" alt="">
+            </div>
+            <div class="img-section fade">
+                <div class="text-content">
+                    <h1>SAN FELIPE</h1>
+                    <h3>ORGULLO Y TRADICIÓN</h3>
+                    <h3> 3 / 3</h3>
+
+                </div>
+                <img src="/images/Jardín_San_Felipe.jpg" alt="">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+    </section>
+
+
+    <!-- Apartado de las tarjetas de los servicios -->
+    <section class="services">
+
+        <div class="services-logo">
+            <img src="/images/images.png" alt="">
+        </div>
+        <h1 class="services-title">SERVICIOS</h1>
+
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-logo"><i class="fa-solid fa-eye"></i></div>
+                <div class="card-title">
+                    <h1>TRANSPARENCIA</h1>
+                </div>
+                <div class="card-content">
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-logo"><i class="fa-solid fa-house"></i></div>
+                <div class="card-title">
+                    <h1>PAGO DE IMPUESTO PREDIAL</h1>
+                </div>
+                <div class="card-content">
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-logo"><i class="fa-solid fa-passport"></i></div>
+                <div class="card-title">
+                    <h1>PASAPORTES</h1>
+                </div>
+                <div class="card-content">
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-logo"><i class="fa-solid fa-bullhorn"></i></div>
+                <div class="card-title">
+                    <h1>DENUNCIAS, QUEJAS Y SUGERENCIAS</h1>
+                </div>
+                <div class="card-content">
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Pie de pagina -->
+    <footer class="footer-section">
+        <div class="sanfelipe">
+            <h1><span>SAN FELIPE</span></h1>
+            <ul>
+                <li><a href="">AVISO DE PRIVACIDAD</a></li>
+                <li><a href="">AVISO DE PRIVACIDAD SIMPLIFICADO</a></li>
+                <li><a href="">DECLARACIÓN</a></li>
+                <li><a href="">EVALUACIÓN AL DESEMPEÑO 2024</a></li>
+            </ul>
+
+        </div>
+        <div class="contacto">
+            <div class="sanfelipe">
+                <h1><span>CONTACTO</span></h1>
+                <ul>
+                    <li>SAN FELIPE GUANAJUATO, <span>MÉXICO</span></li>
+                    <li>PLAZA PRINCIPAL <span>#100</span></li>
+                    <li>ZONA <span>CENTRO</span></li>
+                    <li>C.P <span>37600</span></li>
+                    <li>TEL. <span>428 68 5 00 13</span></li>
+                    <li>HORARIO: <span>DE 8:30 A 16:00</span></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="redes">
+            <div class="sanfelipe">
+                <h1><span>SÍGUENOS</span></h1>
+                <ul>
+                    <li class="social"><span> <a href="#"><i class="fa-brands fa-facebook"></i></a></span> <span><a
+                                href="#"><i class="fa-brands fa-youtube"></i></a></span></li>
+                    <p>LA INFORMACIÓN ES PÚBLICA Y <span>AJENA A CUALQUIER PARTIDO POLÍTICO</span></p>
+                    <p>QUEDA PROHIBIDO EL USO PARA <span>FINES DISTINTOS A LOS DE DIVULGACIÓN DE INFORMACIÓN</span>
+                    </p>
+                    <p>DERECHOS RESERVADOS</p>
+                    <p><span>PRESIDENCIA MUNICIPAL</span>. SAN FELIPE, GUANAJUATO</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Archivo JS del carrusel de imagenes -->
+    <script src="/assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/d3ae0c1cce.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

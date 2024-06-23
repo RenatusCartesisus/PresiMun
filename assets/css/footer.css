@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-section {
+    display: flex;
+    background-color: var(--bg-color);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+
+.sanfelipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+    gap: .7rem;
+    max-width: 400px;
+}
+
+.sanfelipe ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.sanfelipe ul li a {
+    list-style: none;
+    color: var(--text-color);
+}
+
+.sanfelipe ul li a:hover {
+    list-style: none;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.social span a i {
+    color: var(--main-color);
+    font-size: 1.8rem;
+}
+
+.social span a i:hover {
+    color: var(--text-color);
+    font-size: 1.8rem;
+}

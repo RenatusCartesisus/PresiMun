@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+span {
+    color: var(--main-color);
+}
+
+:root {
+
+    --bg-color: #edf4f4;
+    --second-bg-color: #1fccfa;
+    --text-color: #000;
+    --main-color: #0f4bb5;
+}
+
+#check {
+    display: none;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+#menu-icon,
+#cancel-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 1120px) {
+    header {
+        padding: 0 30px;
+    }
+
+    .home {
+        margin-top: 3rem;
+    }
+}
+
+
+@media only screen and (max-width: 1085px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .home {
+        margin-top: 0rem;
+    }
+
+    #cancel-icon {
+        display: none;
+    }
+
+    .home-content {
+        margin-top: 3rem;
+    }
+
+    .navbar {
+        position: absolute;
+        transition: 0.3s ease;
+        top: 3.35rem;
+        left: 0;
+        width: 100%;
+        display: none;
+        background-color: var(--bg-color);
+        overflow: hidden;
+        z-index: 100;
+    }
+
+    .navbar ul li {
+        width: 100%;
+    }
+
+    .dropdown {
+        position: relative;
+        width: 100%;
+    }
+
+    .dropdown li ul {
+        position: absolute;
+        width: 100%;
+    }
+
+    #check:checked~.icons #cancel-icon {
+        display: block;
+    }
+
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    #check:checked~.navbar {
+        display: initial;
+    }
+
+    label {
+        cursor: pointer;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 3% 1rem;
+    background: var(--bg-color);
+    backdrop-filter: blur(10px);
+    display: flex;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Botones de la barra de navegación */
+.navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.navbar ul li a {
+    font-size: .7rem;
+    color: var(--text-color);
+    padding: 20px;
+    font-weight: 500;
+    display: block;
+    border-bottom: 3px solid transparent;
+}
+
+.dropdown {
+    background: var(--bg-color);
+    position: absolute;
+    left: 0;
+    display: none;
+    width: 300px;
+    gap: 1rem;
+    border-radius: 5%;
+}
+
+.dropdown li {
+    width: 100%;
+}
+
+.navbar ul li:hover>.dropdown {
+    display: initial;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.dropdown li a.active:hover {
+    color: var(--main-color);
+}
+
+/* Texto a la izquierda de la barra de navegación (Ayuntamiento San Felipe) */
+.logo:hover {
+    transform: scale(1.01);
+}
+
+.logo span,
+.footer-section h1 {
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.logo {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3 ease;
+}

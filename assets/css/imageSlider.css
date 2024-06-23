@@ -1,0 +1,65 @@
+:root {
+    /* Represents the html element */
+    --bg-color: #edf4f4;
+    --second-bg-color: #1fccfa;
+    --text-color: #000;
+    --main-color: #0f4bb5;
+}
+
+.prev,
+.next {
+    position: absolute;
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.3 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 3px 3px 0;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next:hover,
+.prev:hover {
+    color: var(--main-color);
+    background: var(--text-color);
+}
+
+.img-section {
+    display: none;
+}
+
+.slider-dots {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: yellow;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.active-slider,
+.dot:hover {
+    background-color: #717171;
+
+}
