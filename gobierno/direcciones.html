@@ -4,26 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Diseño del carrusel de imágenes -->
-    <link rel="stylesheet" href="/assets/css/imageSlider.css">
-    <!-- Diseño general de la página -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <!-- Para la barra de navegación responsiva -->
+    <!-- Diseño propio de esta página  -->
+    <link rel="stylesheet" href="/assets/css/map.css">
+    <!-- Pie de página -->
+    <link rel="stylesheet" href="/assets/css/footer.css">
+    <!-- Barra de navegación -->
     <link rel="stylesheet" href="/assets/css/navbar.css">
+    <!-- Ícono de la administración  -->
+    <link rel="icon" href="/images/Escudo_de_San_Felipe_(Guanajuato).ico">
     <!-- Para traer las fuentes de letra -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <!-- Pie de página -->
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <!-- Ícono de la administración  -->
-    <link rel="icon" href="/images/Escudo_de_San_Felipe_(Guanajuato).ico">
-    <title>Administración 2024 - 2027</title>
+    <title>Direcciones</title>
 </head>
 
 <body>
-    <!-- Encabezado -->
+
     <header class="header">
         <input type="checkbox" name="" id="check">
         <a href="/index.html" class="logo">Ayuntamiento <span>San Felipe</span></a>
@@ -34,11 +32,11 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="/index.html" class="active">INICIO</a></li>
+                <li><a href="/index.html">INICIO</a></li>
                 <li><a class="class">GOBIERNO &#x25BE</a>
                     <ul class="dropdown">
-                        <li class="down"><a href="gobierno/ayuntamiento.html">AYUNTAMIENTO</a></li>
-                        <li class="down"><a href="gobierno/direcciones.html">DIRECCIONES</a></li>
+                        <li class="down"><a href="ayuntamiento.html">AYUNTAMIENTO</a></li>
+                        <li class="down"><a href="direcciones.html" class="active">DIRECCIONES</a></li>
                         <li class="down"><a href="">GACETA MUNICIPAL</a></li>
                         <li class="down"><a href="gobierno/contacto.html">CONTACTO</a></li>
                     </ul>
@@ -60,90 +58,64 @@
         </nav>
     </header>
 
-    <!-- Imágenes -->
-    <section class="home">
-        <div class="home-content">
-            <div class="img-section fade">
-                <div class="text-content">
-                    <h1>HONORABLE AYUNTAMIENTO MUNICIPAL</h1>
-                    <h3>Bienvenido a <span>San Felipe, Guanajuato</span></h3>
-                    <h3> 1 / 3</h3>
-                </div>
-                <img src="/images/sanfe.jpg" alt="">
-            </div>
-            <div class="img-section fade">
-                <div class="text-content">
-                    <h1>SAN FELIPE</h1>
-                    <h3>TORRES MOCHAS</h3>
-                    <h3> 2 / 3</h3>
-                </div>
-                <img src="/images/Casa_Juárez_-_San_Felipe,_Guanajuato.jpg" alt="">
-            </div>
-            <div class="img-section fade">
-                <div class="text-content">
-                    <h1>SAN FELIPE</h1>
-                    <h3>ORGULLO Y TRADICIÓN</h3>
-                    <h3> 3 / 3</h3>
+    <!-- Mapa creado y compartido desde Google My Maps. -->
+    <!-- Importante que creen el suyo -->
 
-                </div>
-                <img src="/images/Jardín_San_Felipe.jpg" alt="">
-            </div>
+    <div class="main-container">
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        <div class="container-section map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=17iu06FFIJLTLemGEu9dUDg5FUSPoECo&ehbc=2E312F"></iframe>
         </div>
-    </section>
 
+        <div class="container-section mapcard-section">
+            <h3><span class="shadow">NUESTROS SERVICIOS</span></h3>
 
-    <!-- Apartado de las tarjetas de los servicios -->
-    <section class="services">
-
-        <div class="services-logo">
-            <img src="/images/images.png" alt="">
-        </div>
-        <h1 class="services-title">SERVICIOS</h1>
-
-
-        <div class="cards">
-            <div class="card">
-                <div class="card-logo"><i class="fa-solid fa-eye"></i></div>
-                <div class="card-title">
-                    <h1>TRANSPARENCIA</h1>
+            <div class="mapcard-container">
+                <div class="mapcard">
+                    <div class="mapcard-img">
+                        <img src="/images/jmapa.jpg" alt="">
+                    </div>
+                    <div class="mapcard-content">
+                        <h3><span class="shadow">J.M.A.P.A</span></h3>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <a href="#">Ver más</a>
+                <div class="mapcard">
+                    <div class="mapcard-img">
+                        <img src="/images/cruzroja.png" alt="">
+                    </div>
+                    <div class="mapcard-content">
+                        <h3><span class="shadow">CRUZ ROJA</span></h3>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-logo"><i class="fa-solid fa-house"></i></div>
-                <div class="card-title">
-                    <h1>PAGO DE IMPUESTO PREDIAL</h1>
+                <div class="mapcard">
+                    <div class="mapcard-img">
+                        <img src="/images/pc.png" alt="">
+                    </div>
+                    <div class="mapcard-content">
+                        <h3><span class="shadow">PROTECCIÓN CIVIL</span></h3>
+                    </div>
                 </div>
-                <div class="card-content">
-                    <a href="#">Ver más</a>
+                <div class="mapcard">
+                    <div class="mapcard-img">
+                        <img src="/images/sp.jpg" alt="">
+                    </div>
+                    <div class="mapcard-content">
+                        <h3><span class="shadow">SEGURIDAD PÚBLICA</span></h3>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-logo"><i class="fa-solid fa-passport"></i></div>
-                <div class="card-title">
-                    <h1>PASAPORTES</h1>
-                </div>
-                <div class="card-content">
-                    <a href="#">Ver más</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-logo"><i class="fa-solid fa-bullhorn"></i></div>
-                <div class="card-title">
-                    <h1>DENUNCIAS, QUEJAS Y SUGERENCIAS</h1>
-                </div>
-                <div class="card-content">
-                    <a href="#">Ver más</a>
+                <div class="mapcard">
+                    <div class="mapcard-img">
+                        <img src="/images/bomberos.jpg" alt="">
+                    </div>
+                    <div class="mapcard-content">
+                        <h3><span class="shadow">H. CUERPO DE BOMBEROS</span></h3>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    </section>
+
     <!-- Pie de pagina -->
     <footer class="footer-section">
         <div class="sanfelipe">
@@ -187,11 +159,12 @@
         </div>
     </footer>
 
-    <!-- Archivo JS del carrusel de imagenes -->
-    <script src="/assets/js/script.js"></script>
+
     <!-- Para traer los íconos -->
     <script src="https://kit.fontawesome.com/d3ae0c1cce.js" crossorigin="anonymous"></script>
 
 </body>
+
+
 
 </html>

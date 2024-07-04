@@ -1,0 +1,101 @@
+:root {
+    /* Aqui se pueden alterar los colores que se usan en la pagina */
+    --bg-color: #edf4f4;
+    --second-bg-color: #1fccfa;
+    --text-color: #000;
+    --main-color: #0f4bb5;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-section {
+    padding: 0;
+    width: 50%;
+    margin-top: 7rem;
+    margin-bottom: 3.5rem;
+}
+
+
+
+.map {
+    min-width: 50%;
+    padding: 60px 20px;
+}
+
+.container-section iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    outline: 4px solid var(--main-color);
+}
+
+.shadow {
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.container-section h3 {
+    text-align: center;
+}
+
+.mapcard-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    flex-wrap: wrap;
+    gap: 30px 10px;
+    padding: 5px 5px;
+}
+
+.mapcard {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 270px;
+    height: 300px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0, 0.15);
+    transition: 0.1s ease-in-out;
+    box-shadow: 5px 5px 30px #ccc;
+}
+
+.mapcard:hover {
+    transform: scale(0.9);
+}
+
+.mapcard .mapcard-img {
+    position: absolute;
+    margin: auto;
+    top: 20px;
+    left: 20px;
+    width: 230px;
+    height: 200px;
+    /* background-color: var(--main-color); */
+    border-radius: 12px;
+}
+
+.mapcard .mapcard-content {
+    width: 100%;
+    top: 250px;
+    position: absolute;
+}
+
+.mapcard .mapcard-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .mapcard-section {
+        min-width: 60%;
+    }
+}

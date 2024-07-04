@@ -14,14 +14,19 @@ span {
 }
 
 :root {
-
     --bg-color: #edf4f4;
     --second-bg-color: #1fccfa;
     --text-color: #000;
     --main-color: #0f4bb5;
+    --color-sombra: #6ea5bf;
 }
 
 #check {
+    display: none;
+}
+
+#menu-icon,
+#cancel-icon {
     display: none;
 }
 
@@ -31,10 +36,6 @@ span {
     }
 }
 
-#menu-icon,
-#cancel-icon {
-    display: none;
-}
 
 @media only screen and (max-width: 1120px) {
     header {
@@ -46,8 +47,9 @@ span {
     }
 }
 
+/* 1085px */
 
-@media only screen and (max-width: 1085px) {
+@media only screen and (max-width:1085px) {
     #menu-icon {
         display: block;
     }
@@ -80,14 +82,13 @@ span {
         width: 100%;
     }
 
-    .dropdown {
+    .navbar ul li ul {
         position: relative;
         width: 100%;
     }
 
-    .dropdown li ul {
-        position: absolute;
-        width: 100%;
+    .navbar ul li ul li ul {
+        left: 0;
     }
 
     #check:checked~.icons #cancel-icon {
@@ -145,7 +146,6 @@ span {
     display: none;
     width: 300px;
     gap: 1rem;
-    border-radius: 5%;
 }
 
 .dropdown li {
@@ -174,6 +174,10 @@ span {
 .logo span,
 .footer-section h1 {
     text-shadow: 0 0 25px var(--main-color);
+}
+
+.down:hover {
+    background-color: var(--color-sombra)
 }
 
 .logo {

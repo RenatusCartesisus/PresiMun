@@ -13,7 +13,8 @@
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: var(--text-color);
+    color: var(--main-color);
+    text-shadow: 3px 3px 10px var(--second-bg-color);
     font-weight: bold;
     font-size: 2rem;
     transition: 0.3 ease;
@@ -33,8 +34,8 @@
 
 .next:hover,
 .prev:hover {
-    color: var(--main-color);
-    background: var(--text-color);
+    color: var(--bg-color);
+    text-shadow: 3px 3px 10px var(--text-color);
 }
 
 .img-section {
@@ -46,20 +47,4 @@
     position: absolute;
     bottom: 0;
     justify-content: center;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: yellow;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-}
-
-.active-slider,
-.dot:hover {
-    background-color: #717171;
-
 }

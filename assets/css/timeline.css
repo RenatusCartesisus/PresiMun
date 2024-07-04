@@ -1,0 +1,116 @@
+.shadow {
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+h3 {
+    color: var(--main-color);
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color);
+    margin-top: 3.5rem;
+    padding: 50px 0;
+    display: grid;
+    place-items: center;
+}
+
+.timeline::after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--main-color), var(--second-bg-color));
+
+
+}
+
+.main h1 {
+    position: relative;
+}
+
+.main h1::after {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 4px;
+    left: 50%;
+    bottom: -5px;
+    background-image: linear-gradient(to right, var(--second-bg-color), var(--main-color));
+    transform: translateX(-50%);
+}
+
+.timeline {
+    margin-top: 3.5rem;
+    width: 90%;
+    height: auto;
+    position: relative;
+}
+
+.timeline ul li {
+    width: 50%;
+    height: auto;
+    padding: 15px 20px;
+    background-color: #a1caf1;
+    box-shadow: 1px 1px 25pc rgba(0, 0, 0, 0.384);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "content-img" "text-content";
+    gap: 10px;
+}
+
+.img-timeline img {
+    /* height: 90%; */
+    width: 100%;
+    border-radius: 20px;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    text-align: right;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1224px) {
+    .timeline {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .timeline {
+        width: 80%;
+    }
+
+    .timeline ul li {
+        width: 100%;
+        float: none;
+        clear: none;
+        margin-bottom: 60px;
+    }
+
+    .timeline ul li:nth-child(odd) {
+        transform: translateX(0);
+        text-align: right;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    .timeline ul li:nth-child(even) {
+        transform: translateX(0);
+        text-align: left;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+
+}

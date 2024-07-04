@@ -3,20 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/assets/css/navbar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Diseño propio de esta página  -->
     <!-- Pie de página -->
     <link rel="stylesheet" href="/assets/css/footer.css">
+    <!-- Barra de navegación -->
+    <link rel="stylesheet" href="/assets/css/navbar.css">
     <!-- Ícono de la administración  -->
     <link rel="icon" href="/images/Escudo_de_San_Felipe_(Guanajuato).ico">
-    <title>Direcciones</title>
+    <!-- Para traer las fuentes de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Contacto</title>
 </head>
 
 <body>
 
     <header class="header">
         <input type="checkbox" name="" id="check">
-        <a href="#home" class="logo">Ayuntamiento <span>San Felipe</span></a>
+        <a href="/index.html" class="logo">Ayuntamiento <span>San Felipe</span></a>
         <label for="check" class="icons">
             <i class="fa-solid fa-bars" id="menu-icon"></i>
             <i id="cancel-icon" class="fa-solid fa-xmark"></i>
@@ -24,25 +31,25 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">INICIO</a></li>
+                <li><a href="/index.html">INICIO</a></li>
                 <li><a class="class">GOBIERNO &#x25BE</a>
                     <ul class="dropdown">
-                        <li><a href="">AYUNTAMIENTO</a></li>
-                        <li><a href="direcciones.html" class="active">DIRECCIONES</a></li>
-                        <li><a href="">GACETA MUNICIPAL</a></li>
-                        <li><a href="">CONTACTO</a></li>
+                        <li class="down"><a href="ayuntamiento.html">AYUNTAMIENTO</a></li>
+                        <li class="down"><a href="direcciones.html">DIRECCIONES</a></li>
+                        <li class="down"><a href="gaceta.html">GACETA MUNICIPAL</a></li>
+                        <li class="down"><a href="contacto.html" class="active">CONTACTO</a></li>
                     </ul>
                 </li>
                 <li><a href="#services" class="class">TRANSPARENCIA &#x25BE</a>
                     <ul class="dropdown">
-                        <li><a href="">TRANSPARENCIA</a></li>
-                        <li><a href="">TRANSPARENCIA PRESUPUESTARIA</a></li>
+                        <li class="down"><a href="">TRANSPARENCIA</a></li>
+                        <li class="down"><a href="">TRANSPARENCIA PRESUPUESTARIA</a></li>
                     </ul>
                 </li>
                 <li><a href="#testimonials">MEJORA REGULATORIA &#x25BE</a>
                     <ul class="dropdown">
-                        <li><a href="">TRAMITES</a></li>
-                        <li><a href="">NORMATIVA</a></li>
+                        <li class="down"><a href="">TRAMITES</a></li>
+                        <li class="down"><a href="">NORMATIVA</a></li>
                     </ul>
                 </li>
                 <li><a href="#contact">ENTÉRATE</a></li>
@@ -52,7 +59,6 @@
 
     <div style="height: 100vh;"></div>
 
-    <!-- Pie de pagina -->
     <footer class="footer-section">
         <div class="sanfelipe">
             <h1><span>SAN FELIPE</span></h1>
@@ -95,9 +101,9 @@
         </div>
     </footer>
 
+    <!-- Para traer los íconos -->
+    <script src="https://kit.fontawesome.com/d3ae0c1cce.js" crossorigin="anonymous"></script>
 
 </body>
-
-
 
 </html>
